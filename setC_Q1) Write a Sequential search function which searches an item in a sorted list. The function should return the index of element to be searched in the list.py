@@ -29,6 +29,10 @@ print("sorted tuple:",srt_tuple,end="\n")
 
 def seq_search(Tup,key):
     for i,val in enumerate(Tup):
+        """
+        Enumerate is a built-in function in python that allows you to keep track of the number of iterations (loops) in a loop.
+        This enumerate object contains a count (from the start, which always defaults to 0) and a value obtained from iterating over the iterable object.
+        """
         print("i=",i,"val=",val)
         if val==key :
             return i
