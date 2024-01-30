@@ -40,6 +40,7 @@ def seq_search(Tup,key):
         
 
 # search function
+print("Enter the Element to Search:")
 key=input()
 val=seq_search(srt_tuple,int(key))
 #print("element of tuple  not found") index = None
