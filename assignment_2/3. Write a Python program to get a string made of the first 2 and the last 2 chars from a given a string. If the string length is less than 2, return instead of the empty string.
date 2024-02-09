@@ -10,13 +10,14 @@ Expected Result : Empty String
 """
 
 #string declaration
-str_var="prajwal";
+str_var=input("enter string:");
 
 #string length check
 str_len=len(str_var);
 print("length of string:",str_len,end="\n")
 if(str_len<2):
-    str_var="";
+    str_var="empty string";
+    print(str_var)
 else:
     #create two strings from first two and last two chars
     """
