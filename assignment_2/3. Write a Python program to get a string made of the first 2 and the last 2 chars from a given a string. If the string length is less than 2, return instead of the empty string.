@@ -1,0 +1,48 @@
+"""
+3. Write a Python program to get a string made of the first 2 and the last 2 chars
+from a given a string. If the string length is less than 2, return instead of the empty string.
+Sample String : 'General12'
+Expected Result : 'Ge12'
+Sample String : 'Ka'
+Expected Result : 'KaKa'
+Sample String : ' K'
+Expected Result : Empty String
+"""
+
+#string declaration
+str_var="prajwal";
+
+#string length check
+str_len=len(str_var);
+print("length of string:",str_len,end="\n")
+if(str_len<2):
+    str_var="";
+else:
+    #create two strings from first two and last two chars
+    """
+    In Python, indexing syntax can be used as a substitute for the slice object. 
+    This is an easy and convenient way to slice a string using list slicing 
+    and Array slicing both syntax-wise and execution-wise.
+     
+    syntax:
+    arr[start:stop]         # items start through stop-1
+    arr[start:]             # items start through the rest of the array
+    arr[:stop]              # items from the beginning through stop-1
+    arr[:]                  # a copy of the whole array
+    arr[start:stop:step]    # start through not past stop, by step
+    
+    eg:
+    string[start:stop:step]
+
+    Parameters:
+    start: Starting index where the slicing of object starts.
+    stop: Ending index where the slicing of object stops.
+    step: It is an optional argument that determines the increment between each index for slicing.
+    Return Type: Returns a sliced object containing elements in the given range only
+    """
+    #string of first two chars    
+    out_str1=str_var[:2]
+    print("output string1=",out_str1)
+    # string of last two chars
+    out_str2=str_var[-2:]
+    print("output string2=",out_str2)
