@@ -1,0 +1,33 @@
+"""
+1. Write a python program to check if a string is a Palindrome or Not.
+"""
+print("Check palindrome or not:",end="\n")
+
+#string var
+str1=input("enter string:")
+
+#logic to reverse the string
+def reverse_str(str_v):
+    # slice method used with only parameter step
+    """
+    This notation creates a new string that starts from the end of the original string 
+    and moves backward with a step of -1,
+    method 2 achive the the same:
+    out_str = str_v[-1::-1]
+    """
+    out_str=str_v[::-1] 
+    return out_str
+
+#function call
+rev_str=reverse_str(str1)
+print(rev_str)
+
+#compare orignal string with reverse string
+def check_palindrome(str_i,rev_str):
+    if(str_i == rev_str):
+        print(str_i,"is same",rev_str,"and is palindrome")
+    else:
+        print(str_i,"is not same",rev_str,"and is not palindrome")
+
+#function call
+check_palindrome(str1,rev_str)
