@@ -10,7 +10,7 @@ sentence=input("Enter a Sentence:")
 #print(sentence)
 
 def word_counter(sentence):
-    #split string array
+    #split string array seperator Space
     collector=sentence.split(" ")
     for word in collector:
         print("word=",word,end="\n")
