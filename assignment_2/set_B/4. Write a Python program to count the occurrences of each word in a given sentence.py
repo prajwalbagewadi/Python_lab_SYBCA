@@ -42,5 +42,5 @@ def word_counter(sentence):
     #print the dict created
     print("word_count=",new_dict,end="\n")
         
-        
+#function call        
 word_counter(sentence)
